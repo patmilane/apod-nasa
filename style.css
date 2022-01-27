@@ -1,0 +1,85 @@
+body{
+    overflow-x: hidden; /*tira a barra de rolagem da lateral  */
+    overflow-y: hidden;  
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+    height: 2rem;
+    box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header > h3{
+    padding-top: 0.8%;
+}
+
+.logo{
+    font-size: 2em;
+}
+
+section{
+    display: flex;
+    align-content: center;
+    margin: 11em 0 10.3% 3em;
+}
+
+.descricao p{
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.descricao h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+button{
+    border: none;
+    background-color: #32333a;
+    color: white;
+    border-radius: 4px;
+    width: 100px;
+    height: 42px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 40%;
+    transition: .5s ease-out;
+}
+
+.extras{
+    position: fixed;
+    top: 28%; /*alinhar na parte inferior*/
+    left: 68%; /*alinhar na parte direita*/
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    /* background-color: #11143d; */
+    background-image: url('img/moon.png');
+}
+
+.extras img{
+    left: 20px;
+    -webkit-filter: drop-shadow(2px 2px 2px rgb(4, 4, 19));
+  filter: drop-shadow(2px 1px 8px rgb(3, 3, 3));
+
+}
+.extras img:hover{
+    filter: drop-shadow(2px 4px 8px rgb(66, 66, 73));
+    transform: scale(1.05); 
+    transition: .5s ease-in-out;
+}
+
+
+ .rodape{
+    padding: 2em;
+    box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4);
+} 
