@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
 
+    <link rel="icon" type="image/x-icon" href="img/icon.svg">
 
 
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
     <script src="script.js"></script>
-    
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
-<body onload="consultar()">
+
+<body onload="pesquisarData()">
     <header>
         <h1 class="logo">APOD</h1>
         <h3 onclick="inicio()">INICIO</h3>
     </header>
 
-    <main class="mainpesquisar" >
+    <main class="mainpesquisar">
 
         <div class="tudoPesquisar">
+            <div class="pesquisar">
 
-        <div class="pesquisar">
+                <!-- <p id="data"> </p><br> -->
 
-            <p id="data"> </p><br>
-
-            <div id="midia"></div><br>    
-
-        </div>
+                <div id="midia"></div><br>
+            </div>
 
             <div class="divinput2">
 
-            <label for="data">PESQUISE A DATA DESEJADA</label><br><br>
+                <label for="data">PESQUISE A DATA DESEJADA</label><br><br>
 
 
-                    <input type="date" name="data" class="data"> 
+                <input type="date" name="data" class="data">
 
-                    <button class="botao botaoPesquisar" onclick="consultar()">Pesquisar</button><br>
-                    
-                    <h3 class="mensagemErro"></h3><br><br>
+                <button class="botao botaoPesquisar" onclick="pesquisarData()">Pesquisar</button><br>
+
+                <h3 class="mensagemErro"></h3><br><br>
 
 
-                    <p id="titulo"></p><br>
-                    <p id="autor"></p><br>
-                    <p id="legenda"></p> <!--explicacao-->
+                <p id="titulo"></p><br>
+                <p id="autor"></p><br>
+                <p id="legenda"></p>
+
             </div>
 
-    </div>
-        
+        </div>
+
     </main>
 
-    
+    <footer class="rodape">
+
+        <div class="iconRedesPesquisar">
+            <h3>TODOS OS DIREITOS RESERVADOS | 2022</h3>
+            <a href="https://github.com/patmilane"><img src="img/github.svg" alt="logo-github" width="50px"
+                    target="_blank"></a>
+            <a href="https://www.nasa.gov/"><img src="img/nasa-2.svg" alt="logo-nasa" width="76px" target="_blank"></a>
+            
+        </div>
+
+
+    </footer>
+
+
 </body>
+
 </html>

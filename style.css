@@ -8,7 +8,6 @@ body{
     min-height: 100%;  
     display: flex;
     flex-direction: column;
-    
 }
 
 header{
@@ -101,7 +100,7 @@ input{
     transition: .5s ease-in-out;
 }
 
- footer{
+footer{
     box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4);
     margin-top: auto; /*https://www.youtube.com/watch?v=yc2olxLgKLk*/
  }
@@ -116,12 +115,30 @@ input{
      opacity: 50%;
  }
 
+ .iconRedesPesquisar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    opacity: 50%;
+ }
+
+ .iconRedesPesquisar > h3{
+     margin-right: 4em;
+ }
+
+ .iconRedesPesquisar img{
+     margin-right: 2em;
+ }
+
  .mainpesquisar{
     margin-top: 2%;
 }
 
 .tudoPesquisar{
     display: flex;
+    margin-top: 2%;
 }
 
 .mainpesquisar img{
@@ -139,7 +156,6 @@ input{
 }
 
 .divinput2{
-    margin-top: 3.5%;
     width: 40%;
     text-align: justify;
     margin-right: 5%;
@@ -150,7 +166,6 @@ label{
     font-weight: 550;
     font-size: 1.3em;
 }
-
 
 div#titulo{
     font-weight: bold;
