@@ -4,7 +4,7 @@ html{
 
 body{
     /* overflow-x: hidden;  */
-    overflow-y: hidden;   
+    /* overflow-y: hidden;    */
     min-height: 100%;  
     display: flex;
     flex-direction: column;
@@ -64,9 +64,18 @@ button{
     cursor: pointer;
 }
 
+.botaoPesquisar{
+    height: 33px;
+}
+
 button:hover{
     opacity: 40%;
     transition: .5s ease-out;
+}
+
+input{
+    height: 28px;
+    margin-bottom: 1%;
 }
 
 .extras{
@@ -108,14 +117,41 @@ button:hover{
  }
 
  .mainpesquisar{
+    margin-top: 2%;
+}
+
+.tudoPesquisar{
     display: flex;
-    justify-content: center;
-    margin-top: 3%;
+}
+
+.mainpesquisar img{
+    width: 100%;
 }
 
 .pesquisar{
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 auto;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 1.5em;
+}
+
+.divinput2{
+    margin-top: 3.5%;
+    width: 40%;
+    text-align: justify;
+    margin-right: 5%;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-size: 1.3em;
+}
+
+
+div#titulo{
+    font-weight: bold;
 }

@@ -5,24 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
-<body>
+<body onload="consultar()">
     <header>
         <h1 class="logo">APOD</h1>
         <h3 onclick="inicio()">INICIO</h3>
     </header>
 
+    <main class="mainpesquisar" >
 
-    <main class="mainpesquisar">
+        <div class="tudoPesquisar">
 
         <div class="pesquisar">
-            <label for="input-data">ENTRE COM A DATA DESEJADA</label><br>
-            <input type="date" name="input-data" id="input-data">
+
+            <p id="data"> </p><br>
+
+            <div id="midia"></div><br>    
+
         </div>
+
+            <div class="divinput2">
+
+            <label for="data">PESQUISE A DATA DESEJADA</label><br><br>
+
+
+                    <input type="date" name="data" class="data"> 
+
+                    <button class="botao botaoPesquisar" onclick="consultar()">Pesquisar</button><br>
+                    
+                    <h3 class="mensagemErro"></h3><br><br>
+
+
+                    <p id="titulo"></p><br>
+                    <p id="autor"></p><br>
+                    <p id="legenda"></p> <!--explicacao-->
+            </div>
+
+    </div>
         
     </main>
+
+    
 </body>
 </html>
