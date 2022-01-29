@@ -39,7 +39,7 @@ function resultadoPesquisa(pesquisa) {
     }
 }
 
-///////////////
+/////////////// DARK MODE
 
 const selecionar = document.getElementById('selecionar');
 const divinputs = document.getElementById('divinputs');
@@ -51,8 +51,5 @@ selecionar.addEventListener('change', () => {
     divinputs.style.color = "#4D4F50";    
     header.style.filter = "invert(62%) sepia(19%) saturate(26%) hue-rotate(86deg) brightness(78%) contrast(119%)";
     footer.style.filter = "invert(62%) sepia(19%) saturate(26%) hue-rotate(86deg) brightness(68%) contrast(119%)";
-
-
-
 });
 

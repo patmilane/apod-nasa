@@ -184,6 +184,8 @@ body.dark {
 	position: absolute;
 }
 
+/* Dark mode */
+
 .label {
 	background-color: rgb(75, 75, 75);
 	border-radius: 50px;
@@ -213,3 +215,48 @@ body.dark {
 	transform: translateX(18px);
 }
 
+/* RESPONSIVIDADE */
+
+@media(max-width: 970px){
+
+    .extras{
+        display: none;
+    }
+
+    .tudoPesquisar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pesquisar img{
+        width: 680px;
+    }
+
+    .divinput2{
+        width: 600px;
+        text-align: center;
+        margin-left: 3%;
+    }
+
+    .divcheckbox{
+        margin-left: 50%;
+    }
+}
+
+@media(max-width: 710px){
+
+    footer, header{
+        width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 660px){
+
+    footer{
+        width: 718px;
+    }
+}
