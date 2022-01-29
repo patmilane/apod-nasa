@@ -8,11 +8,11 @@ function pesquisar() {
 
 function pesquisarData() {
     let data = $(".data").val();
-    const apiKey = 'Sk0oacheSAeMtk6f8altpm2U0Y6OHOmxlOU4ncTU';
 
-    $.ajax({ url: `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${data}`,
+    $.ajax({ url: `https://api.nasa.gov/planetary/apod?api_key=Sk0oacheSAeMtk6f8altpm2U0Y6OHOmxlOU4ncTU&date=${data}`,
         success: function (resultado) {
             resultadoPesquisa(resultado);
+            $(".mensagemErro").html(" "); //pra sumir o erro quando a requisição funcionar
         },
         error: function () {
             $(".mensagemErro").html("Data inválida").css({color: "red"});

@@ -9,7 +9,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    transition: background 0.2s linear; 
 }
 
 header{
@@ -217,6 +216,89 @@ body.dark {
 
 /* RESPONSIVIDADE */
 
+
+
+@media(min-width: 1400px){
+    .descricao p{
+        font-size: 1.5rem;
+        max-width: 850px;
+    }
+    
+    .descricao h1{
+        font-size: 1.8em;
+    }
+
+    button{
+        width: 130px;
+        height: 52px;
+        font-size: 1rem;
+    }
+    
+    header{
+        padding: 2rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    /* ///// */
+
+    
+    .tudoPesquisar{
+        display: flex;
+        margin-top: 3%;
+    }
+ 
+    
+    .pesquisar{
+        max-width: 50%;
+        max-height: 50%;
+        font-size: 2.5em;
+    }
+    
+    .divinput2{
+        width: 48%;
+        margin-left: 1%;
+    }
+    
+    label{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 550;
+        font-size: 2em;
+    }
+
+
+    /* ///// */
+}
+
+@media(min-width: 1600px){
+
+    .descricao{
+        margin-left: 5%;
+    }
+    .descricao p{
+        font-size: 2rem;
+        max-width: 900px;
+    }
+    
+    .descricao h1{
+        font-size: 3rem;
+    }
+
+   
+
+    .iconredes{
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .iconredesPesquisar{
+        width: 50%;
+        font-size: 2rem;
+    }
+   
+    
+}
 
 
 @media(max-width: 970px){
