@@ -22,7 +22,7 @@ function pesquisarData() {
 
 function resultadoPesquisa(pesquisa) {
     const data = $("#data");
-    const midia = $("#midia");
+    const imagem = $("#imagem");
     const titulo = $("#titulo");
     const autor = $("#autor");
     const legenda = $("#legenda");
@@ -33,8 +33,26 @@ function resultadoPesquisa(pesquisa) {
     legenda.html(`Sobre: ${pesquisa.explanation}`);
 
     if (pesquisa.media_type == 'image') {
-        midia.html(`<img id="midiaJS" src="${pesquisa.url}"/>`);
+        imagem.html(`<img id="midiaJS" src="${pesquisa.url}"/>`);
     } else {
-        midia.html(`<iframe id="midiaJS" src="${pesquisa.url}?autoplay=1&mute=1"></iframe>`);
+        imagem.html(`<iframe id="midiaJS" src="${pesquisa.url}?autoplay=1&mute=1" width="600" height="350"></iframe>`);
     }
 }
+
+///////////////
+
+const selecionar = document.getElementById('selecionar');
+const divinputs = document.getElementById('divinputs');
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
+
+selecionar.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+    divinputs.style.color = "#4D4F50";    
+    header.style.filter = "invert(62%) sepia(19%) saturate(26%) hue-rotate(86deg) brightness(78%) contrast(119%)";
+    footer.style.filter = "invert(62%) sepia(19%) saturate(26%) hue-rotate(86deg) brightness(68%) contrast(119%)";
+
+
+
+});
+

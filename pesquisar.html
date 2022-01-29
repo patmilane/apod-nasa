@@ -14,7 +14,6 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
-    <script src="script.js"></script>
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -32,26 +31,30 @@
         <div class="tudoPesquisar">
             <div class="pesquisar">
 
-                <!-- <p id="data"> </p><br> -->
-
-                <div id="midia"></div><br>
+                <div id="imagem"></div><br>
             </div>
 
-            <div class="divinput2">
+            <div class="divinput2" id="divinputs">
 
                 <label for="data">PESQUISE A DATA DESEJADA</label><br><br>
 
-
                 <input type="date" name="data" class="data">
-
                 <button class="botao botaoPesquisar" onclick="pesquisarData()">Pesquisar</button><br>
 
                 <h3 class="mensagemErro"></h3><br><br>
-
-
                 <p id="titulo"></p><br>
                 <p id="autor"></p><br>
-                <p id="legenda"></p>
+                <p id="legenda"></p><br>
+
+                <!-- https://www.youtube.com/watch?v=xodD0nw2veQ -->
+                <div>
+                    <input type="checkbox" class="checkbox" id="selecionar" />
+                    <label class="label" for="selecionar">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <!-- fim -->
+
 
             </div>
 
@@ -63,16 +66,18 @@
 
         <div class="iconRedesPesquisar">
             <h3>TODOS OS DIREITOS RESERVADOS | 2022</h3>
-            <a href="https://github.com/patmilane"><img src="img/github.svg" alt="logo-github" width="50px"
+            <a href="https://github.com/patmilane"><img src="img/github.svg" alt="logo-github" width="52px"
                     target="_blank"></a>
-            <a href="https://www.nasa.gov/"><img src="img/nasa-2.svg" alt="logo-nasa" width="76px" target="_blank"></a>
+            <a href="https://www.nasa.gov/"><img src="img/nasa-2.svg" alt="logo-nasa" width="66px" target="_blank"></a>
             
         </div>
 
 
     </footer>
 
+    <script src="script.js"></script>
 
+<script src="botao.js"></script>
 </body>
 
 </html>
