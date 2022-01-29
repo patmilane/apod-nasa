@@ -217,6 +217,8 @@ body.dark {
 
 /* RESPONSIVIDADE */
 
+
+
 @media(max-width: 970px){
 
     .extras{
@@ -260,3 +262,4 @@ body.dark {
         width: 718px;
     }
 }
+
