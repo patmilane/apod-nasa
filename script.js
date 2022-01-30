@@ -21,13 +21,13 @@ function pesquisarData() {
 }
 
 function resultadoPesquisa(pesquisa) {
-    const data = $("#data");
     const imagem = $("#imagem");
     const titulo = $("#titulo");
     const autor = $("#autor");
     const legenda = $("#legenda");
+    //const data = $("#data");
 
-    data.html(moment(pesquisa.date).format('DD MMMM, YYYY'));
+    //data.html(moment(pesquisa.date).format('DD MMMM, YYYY'));
     titulo.html(pesquisa.title);
     autor.html(`Créditos: ${pesquisa.copyright}`);
     legenda.html(`Sobre: ${pesquisa.explanation}`);
