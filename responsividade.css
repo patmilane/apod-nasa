@@ -1,0 +1,111 @@
+@media(min-width: 1400px){
+    .descricao p{
+        font-size: 1.5rem;
+        max-width: 750px;
+    }
+    
+    .descricao h1{
+        font-size: 1.8em;
+    }
+ 
+    .tudoPesquisar{
+        display: flex;
+        margin-top: 3%;
+    }
+ 
+    .pesquisar{
+        max-width: 50%;
+        max-height: 50%;
+        font-size: 2.5em;
+    }
+    
+    .divinput2{
+        width: 48%;
+        margin-left: 1%;
+    }
+    
+    label{
+        font-weight: 550;
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 1600px){
+
+    .descricao{
+        margin-left: 5%;
+    }
+    .descricao p{
+        font-size: 2rem;
+        max-width: 900px;
+    }
+    
+    .descricao h1{
+        font-size: 3rem;
+    }
+
+    .iconredes{
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .iconredesPesquisar{
+        width: 50%;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 980px){
+
+    .extras{
+        display: none;
+    }
+
+    .descricao{
+        max-width: 700px;
+    }
+
+    .tudoPesquisar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pesquisar img{
+        width: 680px;
+    }
+
+    .divinput2{
+        width: 600px;
+        text-align: center;
+        margin-left: 3%;
+    }
+
+    .divcheckbox{
+        margin-left: 50%;
+    }
+}
+
+@media(max-width: 710px){
+
+    footer, header{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 660px){
+
+    body{
+        overflow-y: hidden;  
+
+    }
+    
+    header h3{
+        display: none;
+        
+    }
+}
+

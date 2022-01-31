@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    /* overflow-x: hidden;  */
+     overflow-x: hidden;  
     /* overflow-y: hidden;    */
     min-height: 100%;  
     display: flex;
@@ -87,18 +87,14 @@ input{
     border-radius: 50%;
     /* background-color: #11143d; */
     background-image: url('img/moon.png');
-}
-
-.extras img{
-    left: 20px;
-    -webkit-filter: drop-shadow(2px 2px 2px rgb(4, 4, 19));
-    filter: drop-shadow(2px 1px 8px rgb(3, 3, 3));
+    filter: drop-shadow(2px 4px 4px rgb(66, 66, 73));
 
 }
+
 .extras img:hover{
     filter: drop-shadow(2px 4px 8px rgb(66, 66, 73));
     transform: scale(1.05); 
-    transition: .5s ease-in-out;
+    transition: .6s ease-in-out;
 }
 
 footer{
@@ -183,7 +179,6 @@ body.dark {
 	position: absolute;
 }
 
-/* Dark mode */
 
 .label {
 	background-color: rgb(75, 75, 75);
@@ -214,134 +209,5 @@ body.dark {
 	transform: translateX(18px);
 }
 
-/* RESPONSIVIDADE */
 
-
-
-@media(min-width: 1400px){
-    .descricao p{
-        font-size: 1.5rem;
-        max-width: 850px;
-    }
-    
-    .descricao h1{
-        font-size: 1.8em;
-    }
-
-    button{
-        width: 130px;
-        height: 52px;
-        font-size: 1rem;
-    }
-    
-    header{
-        padding: 2rem;
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
-    }
-
-    /* ///// */
-
-    
-    .tudoPesquisar{
-        display: flex;
-        margin-top: 3%;
-    }
- 
-    
-    .pesquisar{
-        max-width: 50%;
-        max-height: 50%;
-        font-size: 2.5em;
-    }
-    
-    .divinput2{
-        width: 48%;
-        margin-left: 1%;
-    }
-    
-    label{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 550;
-        font-size: 2em;
-    }
-
-
-    /* ///// */
-}
-
-@media(min-width: 1600px){
-
-    .descricao{
-        margin-left: 5%;
-    }
-    .descricao p{
-        font-size: 2rem;
-        max-width: 900px;
-    }
-    
-    .descricao h1{
-        font-size: 3rem;
-    }
-
-   
-
-    .iconredes{
-        width: 50%;
-        font-size: 2rem;
-    }
-
-    .iconredesPesquisar{
-        width: 50%;
-        font-size: 2rem;
-    }
-   
-    
-}
-
-
-@media(max-width: 970px){
-
-    .extras{
-        display: none;
-    }
-
-    .tudoPesquisar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .pesquisar img{
-        width: 680px;
-    }
-
-    .divinput2{
-        width: 600px;
-        text-align: center;
-        margin-left: 3%;
-    }
-
-    .divcheckbox{
-        margin-left: 50%;
-    }
-}
-
-@media(max-width: 710px){
-
-    footer, header{
-        width: 700px;
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0 auto;
-    }
-}
-
-@media(max-width: 660px){
-
-    footer{
-        width: 718px;
-    }
-}
 
