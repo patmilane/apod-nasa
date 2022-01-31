@@ -35,7 +35,7 @@ function resultadoPesquisa(pesquisa) {
     if (pesquisa.media_type == 'image') {
         imagem.html(`<img id="midiaJS" src="${pesquisa.url}"/>`);
     } else {
-        imagem.html(`<iframe id="midiaJS" src="${pesquisa.url}?autoplay=1&mute=1" width="600" height="350"></iframe>`);
+        imagem.html(`<iframe id="midiaJS" src="${pesquisa.url}?autoplay=1&mute=1" width="650" height="375"></iframe>`);
     }
 }
 
