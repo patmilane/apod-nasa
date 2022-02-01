@@ -93,14 +93,8 @@
 
 @media(max-width: 660px){
 
-    body{
-        overflow-y: hidden;  
-
-    }
-    
     header h3{
-        display: none;
-        
+        display: none;  
     }
 
     .pesquisar img{
