@@ -91,6 +91,10 @@ input{
 
 }
 
+.extras img{
+    transition: ease-in-out 1s;
+}
+
 .extras img:hover{
     filter: drop-shadow(2px 4px 8px rgb(66, 66, 73));
     transform: scale(1.08); 
