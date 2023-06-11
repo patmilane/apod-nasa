@@ -9,13 +9,13 @@ function pesquisar() {
 function pesquisarData() {
     let data = $(".data").val();
 
-    $.ajax({ url: `https://api.nasa.gov/planetary/apod?api_key=Sk0oacheSAeMtk6f8altpm2U0Y6OHOmxlOU4ncTU&date=${data}`,
+    $.ajax({ url: `https://api.nasa.gov/planetary/apod?api_key=l9BvZKmGDcAazezT6Qn85u2DzY5g81NTNrRjBXcE&date=${data}`,
         success: function (resultado) {
             resultadoPesquisa(resultado);
             $(".mensagemErro").html(" "); //pra sumir o erro quando a requisição funcionar
         },
         error: function () {
-            $(".mensagemErro").html("Data inválida").css({color: "red"});
+            $(".mensagemErro").html("Ocorreu um erro na API").css({color: "red"});
         }
     });
 }

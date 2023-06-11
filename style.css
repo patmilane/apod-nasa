@@ -15,10 +15,10 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem; 
     padding-left: 2rem;
-    height: 2rem;
-    box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4);
+    height: 2.5rem;
+    /* box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4); */
     font-family: 'Times New Roman', Times, serif;
     cursor: context-menu;
 }
@@ -26,10 +26,19 @@ header{
 header > h3{
     padding-top: 0.8%;
     cursor: pointer;
+    background-color: #F0EAE9;
+    padding: 14px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 header > h3:hover{
     opacity: 0.7;
+}
+
+
+header > h1{
+    cursor: pointer;
 }
 
 .logo{
